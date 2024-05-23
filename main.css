@@ -70,5 +70,8 @@ a.button{
   color: white;
   background-color: turquoise;
   text-decoration: none;
+}
 
+p{
+  text-align: center;
 }

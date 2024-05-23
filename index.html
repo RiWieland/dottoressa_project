@@ -3,15 +3,83 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css"/>
-<style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+  <title>Testimonial Slider</title>
+   <style>
+
+   .container{
+   max-width:1200px;
+   width:100%;
+   position:relative;
+   margin:0 auto;
+   }
+    .mySwiper{
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    }
+    .card{
+    text-align: center;
+    background-color: #ffffff;
+    padding:20px 30px;
+    border-radius: 10px;
+	box-shadow:rgb(149 157 165 / 20%) 0px 8px 24px;
+    }
+	.swiper-slide{
+	display:flex;
+	align-items:center;
+	}
+    .card img{
+    width: 130px;
+    border-radius: 50%;
+	margin-top:-70px;
+    }
+    h3,h4{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+	p{
+	font-size:15px;
+	line-height:20px;
+	color:#222222;
+	}
+    h3{
+    font-size: 16px;
+    }
+    h4{
+    font-size: 12px;
+    margin-top: 10px;
+    color:#0096FF;
+    }
+	.swiper-button-next, .swiper-rtl .swiper-button-prev{
+	color:#0096FF;
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+	font-size:32px;
+	}
+	.review i{
+	color:orange;
+	}
 </style>
 </head>
 <body>
 
 <div class="header">
   <a href="#default" class="logo">Dentista Chiara Saverino</a>
+
   <div class="header-right">
-    <a class="active" href="#Appointment">Appointment</a>
+    <a class="active" href="#Appointment" ><i class="fa fa-calendar" aria-hidden="true"></i> Appointment</a>
     <a href="#Team">Team</a>
     <a href="#Contact">Contact</a>
   </div>
@@ -21,15 +89,100 @@
   <h1>Benvenuti, Welcome, Bonjour and Buenos Dias!</h1>
   <img src="content/Dottoressa_Saverino.png" alt="Dentista" style="width:256px;height:256px;"><br>
 
-  <p>Resize the browser window to see the effect.</p>
-  <p>Some content..</p>
+  <p>           
+    <h1> What my patients say... </h1>
+    <div class="review" id="central-review" style="text-align: center;">
+    <p>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <i class="fa fa-star" aria-hidden="true"></i>
+    <b> (57)</b></p> 
 
-  <p>
-    <h1> Book your appointment on </h1><br>
-    <a class="button" href="https://www.miodottore.it/chiara-saverino/dentista-igienista-dentale-ortodontista/catania#address-id=%5B867195%5D&filters%5Bspecializations%5D%5B%5D=10">Appointment</a>
-  </p>
-    
-    
+  <!-- Swiper -->
+  <div class="container">
+    <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide">
+           <div class="card">
+               <img src="images/image1.jpg" alt="" srcset="">
+       <div class="review">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+       </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+               <h3>Name Patient3</h3>
+               <h4>Orthodonticial treatment</h4>
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="card">
+               <img src="images/image2.jpg" alt="" srcset="">
+       <div class="review">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+       </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+               <h3>Name of Patient 1</h3>
+               <h4>Cleaning treatment </h4>
+           </div>
+         </div>
+         <div class="swiper-slide">
+           <div class="card">
+               <img src="images/image3.jpg" alt="" srcset="">
+       <div class="review">
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+                   <i class="fa fa-star" aria-hidden="true"></i>
+       </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis aliquam est, ut libero doloribus</p>
+               <h3>Name of Patient 2</h3>
+               <h4>Orthodonticial treatment</h4>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var slider = new  Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        breakpoints: {  
+        '480': {
+        slidesPerView: 2,
+        spaceBetween: 40,},
+        '640': {
+        slidesPerView: 3,
+        spaceBetween: 50, },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 2000,
+        }
+    })
+</script>
+
+
 
   <p>
   <h1> Services </h1><br>
@@ -42,7 +195,6 @@
 </div>
 
 
-d
 <p>           
   <h1> The Team </h1><br>
 </p>
