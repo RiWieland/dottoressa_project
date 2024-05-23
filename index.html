@@ -14,7 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
 
-  <title>Testimonial Slider</title>
+  <title>Studio Dentista Saverino</title>
    <style>
 
    .container{
@@ -80,13 +80,13 @@
 
   <div class="header-right">
     <a target="_blank" rel="noopener noreferrer" class="active" id="external_link" href="https://www.miodottore.it/chiara-saverino/dentista-igienista-dentale-ortodontista/catania#address-id=%5B867195%5D&filters%5Bspecializations%5D%5B%5D=10"><i class="fa fa-calendar" aria-hidden="true"></i> Appointment</a>
-    <a href="#Team">Team</a>
-    <a href="#Contact">Contact</a>
+    <!-- <a href="#Team">Team</a>
+    <a href="#Contact">Contact</a> !-->
   </div>
 </div>
 
 <div style="padding-left:20px">
-  <h1>Benvenuti, Welcome, Bonjour and Buenos Dias!</h1>
+  <h1>Benvenuti and Welcome!</h1>
   <img src="content/Dottoressa_Saverino.png" alt="Dentista" style="width:256px;height:256px;"><br>
 
   <p>           
@@ -206,10 +206,55 @@
   <h1> What my patients say </h1><br>
 </p>
 
+
 <p>
-<h1> Book your appointment on </h1><br>
-<a id="external_link" href="https://www.miodottore.it/chiara-saverino/dentista-igienista-dentale-ortodontista/catania#address-id=%5B867195%5D&filters%5Bspecializations%5D%5B%5D=10">miodottore</a>
-</p>
+
+<div class="contact">
+<h2>Contact</h2>
+<ul>
+  <li><i class="fa fa-mobile" aria-hidden="true"></i> +39 xxxxxxx</li>
+  <li><i class="fa fa-envelope-square" aria-hidden="true"></i> Chiara Saverino@gmail.com</li>
+</ul>
+<h2>Ora di aperta</h2>
+<ul>
+  <li>Lundi 9:00 - 1600</li>
+  <li>Martedi 9:00 - 1600</li>
+</ul>
+</div>
+
+
+
+<div id="contentframe" style="position:relative;  left: 800px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.2439815971725!2d15.077069275344224!3d37.525745572049125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313e35d41377899%3A0xb2b4df0c5a9e0676!2sDott.ssa%20Chiara%20Saverino%2C%20Dentista!5e0!3m2!1sen!2sde!4v1716470428578!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</div>
+
+
+<h1>Contactform</h1>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="e-mail">E-mail</label>
+    <input type="text" id="mail" name="mail" placeholder="Your e-mail..">
+
+    <label for="patient">Are you already our patient?</label>
+    <select id="patient" name="patient">
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
 
 </body>
