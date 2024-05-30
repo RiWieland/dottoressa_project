@@ -64,6 +64,28 @@ h1{
   text-align: center;
 }
 
+h3{
+  font-size: 16px;
+}
+
+h4{
+  font-size: 12px;
+  margin-top: 10px;
+  color:#0096FF;
+}
+
+h3,h4{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+
+  p{
+    text-align: center;
+    font-size:15px;
+    line-height:20px;
+    color:#222222;  
+  }
+  
 a.button{
   padding: 20px 10px;
   border-radius: 3px;
@@ -72,9 +94,6 @@ a.button{
   text-decoration: none;
 }
 
-p{
-  text-align: center;
-}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -109,3 +128,4 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
